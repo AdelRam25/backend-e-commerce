@@ -8,5 +8,7 @@ module.exports = (photo) => {
       photo: generateUrl(photo.photo.replaceAll('\\', '/')),
       description: photo.description,
       category: photo.category,
+      aperture : photo.aperture,
+      time: photo.time
     };
   };

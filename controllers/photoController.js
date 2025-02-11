@@ -40,6 +40,8 @@ exports.createPhoto = async (req, res, next) => {
             photo: req.file.path,
             description: req.body.description,
             category: req.body.category,
+            aperture: req.body.aperture,
+            time: req.body.time
 
         })
 
@@ -75,6 +77,8 @@ exports.updatePhoto = async (req, res, next) => {
             photo: req.file.path,
             description: req.body.description,
             category: req.body.category,
+            aperture:req.body.aperture,
+            time:req.body.time
         }, { new: true })
 
         return res.json(photoResource(updatedPhoto))

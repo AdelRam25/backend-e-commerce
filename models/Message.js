@@ -4,5 +4,6 @@ module.exports = mongoose.model("Message", {
 email:String,
 nom : String,
 prenom: String,
-message : String
+message : String,
+date: Date
 });

@@ -11,7 +11,8 @@ exports.addMessage= async (req, res) => {
     email:req.body.email,
     nom : req.body.nom,
     prenom : req.body.prenom,
-   message: req.body.message
+   message: req.body.message,
+   date: new Date()
   });
   res.json(message);
 };

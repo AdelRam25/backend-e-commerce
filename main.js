@@ -10,7 +10,7 @@ const messageRoute = require('./routes/messageRoute')
 
 const app = express()
 
-app.use("./public", express.static('public'));
+app.use("/public/uploads", express.static('public/uploads'));
 app.use(cors())
 app.use(express.json())
 

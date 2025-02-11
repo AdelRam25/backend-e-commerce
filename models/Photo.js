@@ -4,5 +4,8 @@ module.exports = mongoose.model("Photo", {
   name: String,
   description: String,
   category: String,
-  photo:  String
+  photo:  String,
+  aperture:String,
+  time: String
+
 });
