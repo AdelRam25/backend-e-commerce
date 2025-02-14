@@ -1,6 +1,6 @@
 const Photo = require("../models/Photo")
 const photoResource = require("../resources/photoResource")
-const { createPhotoSchema } = require("../validations/photoValidations")
+
 
 exports.getPhotos = async (req, res, next) => {
     const filters = {}
